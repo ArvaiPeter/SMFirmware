@@ -38,6 +38,7 @@ class Printer:
         # Init printer components that must be setup prior to config
         for m in [gcode, webhooks]:
             m.add_early_printer_objects(self)
+
     def get_start_args(self):
         return self.start_args
     def get_reactor(self):
